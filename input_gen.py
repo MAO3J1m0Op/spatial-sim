@@ -29,4 +29,6 @@ for i in range(folder_num):
     csv = path / f'img{i}.csv'
     input_file.write(f'dump csv {csv}\n')
 
+steps_file = path / 'steps.csv'
+input_file.write(f'dump steps {str(steps_file)}')
 input_file.write('exit\n')
