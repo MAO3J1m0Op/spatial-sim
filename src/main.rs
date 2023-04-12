@@ -369,6 +369,8 @@ fn run_command(
         }
         "help" => {
             println!("List of all commands:");
+            println!("\texit");
+            println!("\t\tExits the simulator. THIS DISCARDS ANY UNSAVED DATA!!");
             println!("\tinit <size: int> <alpha1: float> <alpha2: float> <alpha3: float> <beta1: float> <beta2: float> <beta3: float>");
             println!("\t\tInitializes the lattice in a random state and sets up the payoff matrix");
             println!("\tstep <steps: int>");
