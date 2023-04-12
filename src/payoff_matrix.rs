@@ -25,16 +25,16 @@ impl PayoffMatrix {
         Self::new(
             [
                 1.0,
-                beta[2] * omega + 1.0,
-                alpha[1] * omega + 1.0,
+                alpha[2] * omega + 1.0,
+                beta[1] * omega + 1.0,
             ],
             [
-                alpha[2] * omega + 1.0,
+                beta[2] * omega + 1.0,
                 1.0,
                 alpha[0] * omega + 1.0,
             ],
             [
-                alpha[2] * omega + 1.0,
+                alpha[1] * omega + 1.0,
                 beta[0] * omega + 1.0,
                 1.0
             ]
