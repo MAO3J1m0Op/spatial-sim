@@ -368,7 +368,25 @@ fn run_command(
             }
         }
         "help" => {
-            println!("lmao you thought. (todo)");
+            println!("List of all commands:");
+            println!("\tinit <size: int> <alpha1: float> <alpha2: float> <alpha3: float> <beta1: float> <beta2: float> <beta3: float>");
+            println!("\t\tInitializes the lattice in a random state and sets up the payoff matrix");
+            println!("\tstep <steps: int>");
+            println!("\t\tPerforms the specified number of simulation steps");
+            println!("\tsim <time: float>");
+            println!("\t\tRuns the simulation for the provided amount of simulation time");
+            println!("\ttime");
+            println!("\t\tPrints the current simulation time");
+            println!("\tcount");
+            println!("\t\tPrints the number of cells in each state");
+            println!("\tdump csv <file: str>");
+            println!("\t\tCreates a new CSV file and saves the current lattice state to it");
+            println!("\tdump img <folder: str>");
+            println!("\t\tPopulates the specified folder with an image representation fo the current lattice state");
+            println!("\tdump count <file: str>");
+            println!("\t\tDumps the number of cells in each state to the provided file");
+            println!("\tdump steps <file: str>");
+            println!("\t\tPrints all the simulation steps made to the specified file");
         }
         _ => {
             println!("That command doesn't exist (type \"help\")");
