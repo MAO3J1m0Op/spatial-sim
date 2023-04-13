@@ -23,7 +23,7 @@ def input_gen(
         input_file.write(f'dump csv {csv}\n')
 
     steps_file = path / 'steps.csv'
-    input_file.write(f'dump steps {str(steps_file)}')
+    input_file.write(f'dump steps {str(steps_file)}\n')
     input_file.write('exit\n')
 
 if __name__ == '__main__':
