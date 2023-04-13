@@ -141,10 +141,13 @@ pub enum State {
 
 impl Distribution<State> for Standard {
     fn sample<R: Rng + ?Sized>(&self, rng: &mut R) -> State {
-        match rng.sample::<u8, _>(Uniform::new_inclusive(0, 2)) {
-            0 => State::Resorption,
-            1 => State::Formation,
-            _ => State::Quiescence,
+        let number = rng.sample::<f32, _>(Uniform::new(0.0, 1.0));
+        if number < 0.2 {
+            State::Resorption
+        } else if number < 0.5 {
+            State::Formation
+        } else {
+            State::Quiescence
         }
     }
 }
