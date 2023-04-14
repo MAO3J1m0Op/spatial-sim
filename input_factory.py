@@ -3,10 +3,10 @@ from pathlib import Path
 from input_gen import input_gen
 
 # Constant parameters
-folder_num = 20
-sim_time = 0.5
-count_dumps = 50
-size = 50
+folder_num = 40
+sim_time = 0.25
+count_dumps = 100
+size = 45
 alpha1 = -0.1
 alpha2 = -0.5
 beta1 = 0.6
