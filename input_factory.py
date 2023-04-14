@@ -8,7 +8,7 @@ sim_time = 0.5
 count_dumps = 50
 size = 50
 alpha1 = -0.1
-alpha2 = 0.5
+alpha2 = -0.5
 beta1 = 0.6
 beta2 = 0.2
 
